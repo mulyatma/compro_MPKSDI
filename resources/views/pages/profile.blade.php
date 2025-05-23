@@ -53,12 +53,14 @@
         <div class="flex justify-center">
             <div class="w-full max-w-md text-center">
                 <div class="gallery-item">
+                    @if (!empty($structures))
                     <img
                         src="{{ asset('storage/' . $structures->value) }}"
                         class="mx-auto max-w-[450px] w-full"
                         data-aos="fade-up"
                         data-aos-delay="150"
                         alt="Struktural" />
+                    @endif
                 </div>
             </div>
         </div>
